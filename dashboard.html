@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="more.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="welcomeMessage">Welcome!</h2>
+
+    <div class="intro-text">
+      <h3>Final Destination: Chapter 1</h3>
+      <p>You successfully entered in Final Destination Chapter 1. Hope you enjoyed this destination.</p>
+    </div>
+
+    <div class="quote">
+      <p>"You're already on the death list."</p>
+    </div>
+
+    <div class="image-section">
+      <img src="images/Final Destination 2 - Concept Poster by @cory_films.jpg" alt="Final Destination Poster" />
+    </div>
+
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    const loggedInUser = localStorage.getItem("loggedInUser");
+
+    if (!loggedInUser) {
+      window.location.href = "index.html";
+    } else {
+      document.getElementById("welcomeMessage").innerText = `Welcome, ${loggedInUser}!`;
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

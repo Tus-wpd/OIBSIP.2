@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #f4f4f4;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h2#welcomeMessage {
+    font-size: 2em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .intro-text h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #ee0909;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+  }
+  
+  .intro-text p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  .quote p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:  #ee0909;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #444;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  
+  @media (max-width: 600px) {
+    .intro-text h3 {
+      font-size: 1.2em;
+    }
+  
+    .quote p {
+      font-size: 1.1em;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
